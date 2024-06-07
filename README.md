@@ -9,7 +9,7 @@ Copy the auth key from ngrok and add to github repository secrets
 Setup New Workflow Manually the Put the following code in main.yml and commit changes
 
 # Worflow file Code:
-ode is in the code.yml file
+code is in the code.yml file
 Run The WorkFlow and take note of credentials (runneradmin:P@ssw0rd!)
 Get the ngrok endpoint url and use it as ip or address in Remote Desktop Connection with credentials
 
