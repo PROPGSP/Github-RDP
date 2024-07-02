@@ -5,38 +5,19 @@
 # It's not production-ready and is intended for training purposes.
 
 # What should it do?
-# * Check whether an /etc/ssh/sshd_config file exists
-# * Create a backup of this file
+# * Create a backup of the default /etc/ssh/sshd_config file
 # * Edit the file to set certain parameters
 # * Reload the sshd configuration
 
 # To enable debugging mode, remove '#' from the following line
 # set -x
 
-file="$1"
+file="/etc/ssh/sshd_config"  # Use the default file path
+
 param[1]="PermitRootLogin"
 param[2]="PubkeyAuthentication"
 param[3]="AuthorizedKeysFile"
 param[4]="PasswordAuthentication"
-
-usage() {
-    cat << EOF
-usage: $0 ARG1
-ARG1: Name of the sshd_config file to edit. If empty, /etc/ssh/sshd_config will be used as default.
-EOF
-}
-
-# Check if the file argument is empty
-if [ -z "$file" ]; then
-    file="/etc/ssh/sshd_config"
-fi
-
-# Ensure the file exists
-if [ ! -f "$file" ]; then
-    echo "Error: $file does not exist."
-    usage
-    exit 1
-fi
 
 # Create a backup
 cp "$file" "$file.bak"
