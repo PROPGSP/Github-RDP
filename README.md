@@ -13,7 +13,7 @@ Similar steps and then to use it just use this command in your terminal(cmd)
 
  
 command: ssh -p port runneradmin@address
-replace teh port and address accordingly!
+Replace teh port and address accordingly!
 
 example: suppose your ngrok endpoint is tcp://4.tcp.ngrok.io:10737 . Then the port is 10737 and the address is 4.tcp.ngrok.io.
       then the command is : ssh -p 10737 runneradmin@4.tcp.ngrok.io
