@@ -2,11 +2,19 @@
 Free VPS for testing your development skills and your program
 
 #Steps To Create Windows Server
-Sign Up a GitHub Account : https://github.com/
-Create a Private Repository, Go to repository settings > Secrets and variables > Actions > New Repository Secrets
-Sign Up a Ngrok Account : https://ngrok.com/
+Sign Up a GitHub Account : https://github.com/ with your primary mail and temporary mails are strictly restricted.
+
+
+Create a Private Repository, Go to repository settings > Secrets and variables > Actions > New Repository Secrets.
+
+
+Sign Up a Ngrok Account : https://ngrok.com/ .
+
+
 Copy the auth key from ngrok and add to github repository secrets as "NGROK_AUTH_TOKEN".
-Setup New Workflow Manually the Put the following code in main.yml and commit changes
+
+
+Setup New Workflow Manually the Put the following code in main.yml and commit changes.
 
 #Steps To Create Ubuntu Server
 Similar steps and then to use it just use this command in your terminal(cmd)
