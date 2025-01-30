@@ -8,6 +8,12 @@ Sign Up a Ngrok Account : https://ngrok.com/
 Copy the auth key from ngrok and add to github repository secrets as "NGROK_AUTH_TOKEN".
 Setup New Workflow Manually the Put the following code in main.yml and commit changes
 
+Steps to create ubuntu server
+similar steps and then to use it just use this command in your terminal(cmd)
+ssh -p 12762 runneradmin@<address from ngrok ithout tcp:\\>
+example:
+ssh -p 12762 runneradmin@0.tcp.us-cal-1.ngrok.io
+
 # Workflow file Code:
 code is in the code.yml file
 Run The WorkFlow and take note of credentials (Default username is "runneradmin" and password is "P@ssw0rd!")
