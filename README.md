@@ -1,19 +1,20 @@
 # Github-RDP
 Free VPS for testing your development skills and your program
 
-Steps To Create Windows Server
+#Steps To Create Windows Server
 Sign Up a GitHub Account : https://github.com/
 Create a Private Repository, Go to repository settings > Secrets and variables > Actions > New Repository Secrets
 Sign Up a Ngrok Account : https://ngrok.com/
 Copy the auth key from ngrok and add to github repository secrets as "NGROK_AUTH_TOKEN".
 Setup New Workflow Manually the Put the following code in main.yml and commit changes
 
-Steps To Create Ubuntu Server
+#Steps To Create Ubuntu Server
 Similar steps and then to use it just use this command in your terminal(cmd)
+
  
 command: ssh -p <port> runneradmin@<address>
 
-example: suppose your ngrok endpoint is tcp://4.tcp.ngrok.io:10737 . then the port is 10737 and the address is 4.tcp.ngrok.io.
+example: suppose your ngrok endpoint is tcp://4.tcp.ngrok.io:10737 . Then the port is 10737 and the address is 4.tcp.ngrok.io.
       then the command is : ssh -p 10737 runneradmin@4.tcp.ngrok.io
 
 
