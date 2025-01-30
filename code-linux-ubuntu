@@ -1,0 +1,21 @@
+name: Ubuntu Runner Setup
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    
+    - name: Setup Ngrok
+      run: |
+        wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -O ngrok.tgz
+        tar xvzf ngrok.tgz
+        ./ngrok authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
+    
+    - name: Create Tunnel
+      run: ./ngrok tcp 22
