@@ -37,4 +37,4 @@ Get the ngrok endpoint url and use it as ip or address in Remote Desktop Connect
 # Note:
 Only legit mails work . using temp mails wont work.
 This is temporary vps. all your data will be lost within few minutes!!
-Kindly use this for educational purposes only . Ilegal usage will get you account banned!
+Kindly use this for educational purposes only . ilegal usage will get you account banned!
