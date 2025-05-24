@@ -1,5 +1,5 @@
-# Github-RDP
-Free VPS for testing your development skills and your program
+# Github-VM
+Free VM for testing your development skills and your program
 
 #Steps To Create Windows Server
 Sign Up a GitHub Account : https://github.com/ with your primary mail and temporary mails are strictly restricted.
